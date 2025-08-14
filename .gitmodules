@@ -1,12 +1,17 @@
-[submodule "Yega-API"]
-	path = Yega-API
-	url = https://github.com/sebastianvernismora/Yega-API
-[submodule "Yega-Cliente"]
-	path = Yega-Cliente
-	url = https://github.com/sebastianvernismora/Yega-Cliente
-[submodule "Yega-Tienda"]
-	path = Yega-Tienda
-	url = https://github.com/sebastianvernismora/Yega-Tienda
-[submodule "Yega-Repartidor"]
-	path = Yega-Repartidor
-	url = https://github.com/sebastianvernismora/Yega-Repartidor
+# .gitmodules (ejemplo)
+[submodule "apps/cliente"]
+    path = Yega-Cliente
+    url = https://github.com/SebastianVernisMora/Yega-Cliente.git
+    branch = dev
+[submodule "apps/tienda"]
+    path = Yega-Tienda
+    url = https://github.com/SebastianVernisMora/Yega-Tienda.git
+    branch = dev
+[submodule "apps/repartidor"]
+    path = Yega-Repartidor
+    url = https://github.com/SebastianVernisMora/Yega-Repartidor.git
+    branch = dev
+[submodule "backend/api"]
+    path = Yega-API
+    url = https://github.com/SebastianVernisMora/Yega-API.git
+    branch = dev
