@@ -27,7 +27,7 @@ flowchart LR
   end
 
   subgraph Orquestacion
-    J[Jules (Labs)] -- coordina docs\n(Repo actual) --> PR_DOCS[PR docs a dev]
+    J[Jules (Labs)] -- "coordina docs (Repo actual)" --> PR_DOCS[PR docs a dev]
   end
 
   PR_API --> HandoffAPI[Handoff Notes]
