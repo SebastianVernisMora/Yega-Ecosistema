@@ -1,0 +1,12 @@
+[submodule "Yega-API"]
+	path = Yega-API
+	url = https://github.com/sebastianvernismora/Yega-API
+[submodule "Yega-Cliente"]
+	path = Yega-Cliente
+	url = https://github.com/sebastianvernismora/Yega-Cliente
+[submodule "Yega-Tienda"]
+	path = Yega-Tienda
+	url = https://github.com/sebastianvernismora/Yega-Tienda
+[submodule "Yega-Repartidor"]
+	path = Yega-Repartidor
+	url = https://github.com/sebastianvernismora/Yega-Repartidor
