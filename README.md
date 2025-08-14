@@ -14,41 +14,20 @@ El proyecto se encuentra en la fase de **definición del contrato de la API y la
 - Definir los modelos de error (`ERRORS.md`).
 - Documentar la configuración de CORS y los playbooks de despliegue.
 
-Para más detalles sobre las fases del proyecto, consulta el documento de [orquestación y fases](./docs/agents.md).
+Para más detalles sobre las fases del proyecto, consulta el documento de [orquestación y fases](./docs/agents/AGENTS.md).
 
-## Arquitectura
+## Dinámica de Agentes y Flujo de Trabajo
 
-El siguiente diagrama ilustra la interacción entre los diferentes componentes del ecosistema:
+El desarrollo en `Yega-Ecosistema` sigue un flujo de trabajo orquestado por agentes de IA para garantizar la calidad y coherencia del código. La dinámica se define en el documento de [Orquestación de Agentes](./docs/agents/AGENTS.md).
 
-```mermaid
+El flujo general es el siguiente:
 
-flowchart LR
+1.  **Gemini CLI**: Se encarga de los cambios grandes y el desarrollo inicial en el repositorio.
+2.  **Codex CLI**: Revisa el código generado por Gemini para aplicar mejoras de estilo y corregir errores.
+3.  **Jules**: Realiza la revisión final, prepara el Pull Request, documenta los cambios y gestiona los handoffs a otros repositorios.
+4.  **Blackbox**: Interviene para implementaciones puntuales que requieren un alto nivel de complejidad técnica.
 
-  subgraph Repo_API
-    A[Gemini CLI<br>API-Contrato] -- "openapi.yaml / ERRORS.md" --> PR_API[PR a dev]
-  end
-
-  subgraph Repo_Cliente
-    C[Copilot<br>Front Cliente] <-- "entrega: openapi.yaml" --> Issue_C[Issue: Consumir contrato]
-  end
-
-  subgraph Repo_Tienda
-    T[Copilot<br>Front Tienda] <-- "entrega: openapi.yaml" --> Issue_T[Issue: Consumir contrato]
-  end
-
-  subgraph Repo_Repartidor
-    R[Copilot<br>Front Repartidor] <-- "entrega: openapi.yaml" --> Issue_R[Issue: Consumir contrato]
-  end
-
-  subgraph Orquestacion
-    J[Jules] -- "Coordina docs (repo actual)" --> PR_DOCS[PR de documentación a dev]
-  end
-
-  PR_API --> HandoffAPI[Notas de entrega]
-  HandoffAPI --> Issue_C
-  HandoffAPI --> Issue_T
-  HandoffAPI --> Issue_R
-```
+Para una descripción detallada de las responsabilidades de cada agente, consulta la [tabla de responsabilidades](./docs/agents/AGENTS.md#3-tabla-de-responsabilidades).
 
 ## Componentes
 
@@ -63,7 +42,7 @@ El ecosistema está compuesto por los siguientes sub-repositorios (submódulos d
 
 ## Cómo Contribuir
 
-Este monorepo tiene un flujo de trabajo de orquestación específico. Antes de contribuir, por favor revisa la [guía completa para agentes y contribuidores](./docs/agents.md).
+Este monorepo tiene un flujo de trabajo de orquestación específico. Antes de contribuir, por favor revisa la [guía completa para agentes y contribuidores](./docs/agents/AGENTS.md).
 
 Los puntos clave son:
 - **Repositorio de Orquestación**: Este repositorio (`Yega-Ecosistema`) se usa para gestionar la documentación, la planificación y los artefactos de coordinación (`handoffs`). **No se escribe código de aplicación aquí.**
@@ -85,7 +64,7 @@ git submodule init
 git submodule update --recursive
 ```
 
-Una vez clonado el repositorio y los submódulos, consulta la [guía de contribución](./docs/agents.md) para entender el flujo de trabajo y cómo ejecutar cada componente.
+Una vez clonado el repositorio y los submódulos, consulta la [guía de contribución](./docs/agents/AGENTS.md) para entender el flujo de trabajo y cómo ejecutar cada componente.
 
 ## Licencia
 
