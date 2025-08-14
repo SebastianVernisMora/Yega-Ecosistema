@@ -25,30 +25,26 @@ El siguiente diagrama ilustra la interacción entre los diferentes componentes d
 flowchart LR
 
   subgraph Repo_API
-    A[Gemini CLI
-        API-Contract] -- openapi.yaml/ERRORS.md --> PR_API[PR a dev]
+    A[Gemini CLI<br>API-Contrato] -- "openapi.yaml / ERRORS.md" --> PR_API[PR a dev]
   end
 
   subgraph Repo_Cliente
-    C[Copilot
-         Front Cliente] <-- handoff: openapi.yaml --> Issue_C[Issue: Consumir contrato]
+    C[Copilot<br>Front Cliente] <-- "entrega: openapi.yaml" --> Issue_C[Issue: Consumir contrato]
   end
 
   subgraph Repo_Tienda
-    T[Copilot
-         Front Tienda] <-- handoff: openapi.yaml --> Issue_T[Issue: Consumir contrato]
+    T[Copilot<br>Front Tienda] <-- "entrega: openapi.yaml" --> Issue_T[Issue: Consumir contrato]
   end
 
   subgraph Repo_Repartidor
-    R[Copilot
-          Front Repartidor] <-- handoff: openapi.yaml --> Issue_R[Issue: Consumir contrato]
+    R[Copilot<br>Front Repartidor] <-- "entrega: openapi.yaml" --> Issue_R[Issue: Consumir contrato]
   end
 
   subgraph Orquestacion
-    J[Jules] -- "coordina docs (Repo actual)" --> PR_DOCS[PR docs a dev]
+    J[Jules] -- "Coordina docs (repo actual)" --> PR_DOCS[PR de documentación a dev]
   end
 
-  PR_API --> HandoffAPI[Handoff Notes]
+  PR_API --> HandoffAPI[Notas de entrega]
   HandoffAPI --> Issue_C
   HandoffAPI --> Issue_T
   HandoffAPI --> Issue_R
