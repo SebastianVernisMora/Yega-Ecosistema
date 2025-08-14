@@ -264,7 +264,7 @@ Criterios: p95 objetivo, error rate <1%, accesibilidad AA
 ---
 
 ## 7) Diagrama (Mermaid) — Orquestación por fases
-```mermaid
+```
 flowchart LR
   F0[Planeación] --> S1[API/Infra]
   S1 --> S2[Cliente]
@@ -273,8 +273,8 @@ flowchart LR
   S4 --> S5[Hardening/Go-Live]
   S5 --> POST[Post-despliegue: Pagos]
 
-  subgraph Repo Abierto (Jules)
-    D[Docs .md/Issues/PRs a dev] --> H[Handoffs cross-repo (texto)]
+  subgraph "Repo Abierto (Jules)"
+    D["Docs .md / Issues / PRs a dev"] --> H[Handoffs cross-repo (texto)]
   end
 ```
 
