@@ -20,9 +20,10 @@ Para más detalles sobre las fases del proyecto, consulta el documento de [orque
 
 El siguiente diagrama ilustra la interacción entre los diferentes componentes del ecosistema:
 
-```
-mermaid
+```mermaid
+
 flowchart LR
+
   subgraph Repo_API
     A[Gemini CLI\nAPI-Contract] -- openapi.yaml/ERRORS.md --> PR_API[PR a dev]
   end
