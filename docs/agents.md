@@ -274,7 +274,7 @@ flowchart LR
   S5 --> POST[Post-despliegue: Pagos]
 
   subgraph Repo Abierto (Jules)
-    D[Docs .md / Issues / PRs a dev] --> H[Handoffs cross-repo (texto)]
+    D[Docs .md/Issues/PRs a dev] --> H[Handoffs cross-repo (texto)]
   end
 ```
 
