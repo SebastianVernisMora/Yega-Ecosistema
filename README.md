@@ -46,6 +46,7 @@ flowchart LR
   HandoffAPI --> Issue_C
   HandoffAPI --> Issue_T
   HandoffAPI --> Issue_R
+end
 ```
 
 ## Componentes
