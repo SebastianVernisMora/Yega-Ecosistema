@@ -1,15 +1,15 @@
-# Handoffs Index - 2025-08-17
+# Handoffs Index - 2025-08-14
 
 Este documento centraliza los handoffs generados hoy. Contiene una tabla resumen y el texto completo de cada issue para ser copiado en su repositorio correspondiente.
 
 ## Tabla Resumen de Handoffs
 
-| Repo Destino      | Título del Issue                                | Objetivo                                         | Estado    | Due Date   |
-|-------------------|-------------------------------------------------|--------------------------------------------------|-----------|------------|
-| `Yega-API`        | Plan S1: Consolidar CORS y Docs de Despliegue   | Documentar y estandarizar DevOps (PM2, CORS).    | Por crear | 2025-08-20 |
-| `Yega-Cliente`    | Plan S2: Flujo de Catálogo a Pedido              | Documentar el plan de la aplicación cliente (rutas, UX, sesión). | Por crear | 2025-08-20 |
-| `Yega-Tienda`     | Plan S3: Tablero de Pedidos y Transiciones      | Documentar el tablero de la tienda (estados, RBAC). | Por crear | 2025-08-20 |
-| `Yega-Repartidor` | Plan S4: Flujos de Entrega y Base PWA           | Documentar los flujos del repartidor y la base PWA. | Por crear | 2025-08-20 |
+| Repo Destino      | Título del Issue                                | Objetivo                                         | Estado  | Due Date   |
+|-------------------|-------------------------------------------------|--------------------------------------------------|---------|------------|
+| `Yega-API`        | [Plan S1: Consolidar CORS y Docs de Despliegue](https://github.com/SebastianVernisMora/Yega-API/issues/2)   | Documentar y estandarizar DevOps (PM2, CORS).    | Creado  | 2025-08-15 |
+| `Yega-Cliente`    | [Plan S2: Flujo de Catálogo a Pedido](https://github.com/SebastianVernisMora/Yega-Cliente/issues/2)         | Documentar el plan de la aplicación cliente (rutas, UX, sesión). | Creado  | 2025-08-15 |
+| `Yega-Tienda`     | [Plan S3: Tablero de Pedidos y Transiciones](https://github.com/SebastianVernisMora/Yega-Tienda/issues/2)   | Documentar el tablero de la tienda (estados, RBAC). | Creado  | 2025-08-15 |
+| `Yega-Repartidor` | [Plan S4: Flujos de Entrega y Base PWA](https://github.com/SebastianVernisMora/Yega-Repartidor/issues/2)    | Documentar los flujos del repartidor y la base PWA. | Creado  | 2025-08-15 |
 
 ---
 
@@ -18,6 +18,8 @@ Este documento centraliza los handoffs generados hoy. Contiene una tabla resumen
 ### Para pegar en: `Yega-API`
 
 **Título del Issue:** `Plan S1: Consolidar Configuración de CORS y Documentación de Despliegue (PM2)`
+
+**Enlace al Issue:** https://github.com/SebastianVernisMora/Yega-API/issues/2
 
 #### Objetivo
 Documentar y estandarizar la configuración de despliegue (usando PM2), CORS, el procedimiento de Go-Live y la estrategia de Observabilidad para el API. El objetivo es preparar el terreno para los despliegues en los entornos de `staging` y `producción` de manera consistente y segura.
@@ -44,6 +46,8 @@ Documentar y estandarizar la configuración de despliegue (usando PM2), CORS, el
     -   **Título:** `[Ops] Aplicar CORS y PM2 en Servidores VPS`
     -   **Contenido:** Crear un issue separado con las tareas de implementación concretas para el equipo de operaciones, detallando los pasos a seguir en el entorno de `staging` y `producción` para configurar PM2 y los orígenes de CORS en el balanceador de carga o proxy inverso.
 
+**Issue Ops creado:** https://github.com/SebastianVernisMora/Yega-API/issues/4
+
 #### Definition of Done (DoD)
 - [ ] Los tres documentos (`PM2-PLAYBOOK.md`, `GO-LIVE.md`, `OBSERVABILIDAD.md`) están creados en la carpeta `/docs` del repositorio `Yega-API`.
 - [ ] El borrador del cuerpo del PR para los desarrolladores está listo y referenciado en este issue.
@@ -54,6 +58,8 @@ Documentar y estandarizar la configuración de despliegue (usando PM2), CORS, el
 ### Para pegar en: `Yega-Cliente`
 
 **Título del Issue:** `Plan S2: Flujo de Catálogo a Pedido`
+
+**Enlace al Issue:** https://github.com/SebastianVernisMora/Yega-Cliente/issues/2
 
 #### Objetivo
 Definir y documentar el plan de la Fase 2 (S2) para el cliente, cubriendo las rutas de la aplicación, el manejo de estados de UI/UX, la gestión de sesión de usuario y el rendimiento, todo mapeado a la especificación de OpenAPI.
@@ -93,6 +99,8 @@ Definir y documentar el plan de la Fase 2 (S2) para el cliente, cubriendo las ru
 
 **Título del Issue:** `Plan S3: Tablero de Pedidos y Transiciones de Estado`
 
+**Enlace al Issue:** https://github.com/SebastianVernisMora/Yega-Tienda/issues/2
+
 #### Objetivo
 Documentar el plan de la Fase 3 (S3) para la aplicación de la tienda, enfocándose en el diseño del tablero de gestión de pedidos, las transiciones de estado válidas y las reglas de control de acceso basado en roles (RBAC).
 
@@ -121,6 +129,11 @@ Documentar el plan de la Fase 3 (S3) para la aplicación de la tienda, enfocánd
 
 **Título del Issue:** `Plan S4: Flujos de Entrega y Base PWA`
 
+**Enlace(s) al/los Issue(s):**
+- https://github.com/SebastianVernisMora/Yega-Repartidor/issues/2
+- https://github.com/SebastianVernisMora/Yega-Repartidor/issues/3
+- https://github.com/SebastianVernisMora/Yega-Repartidor/issues/4
+
 #### Objetivo
 Definir los flujos de trabajo para el repartidor en la Fase 4 (S4), incluyendo las guardas de secuencia para las acciones y la documentación base para la Progressive Web App (PWA).
 
@@ -146,6 +159,6 @@ Definir los flujos de trabajo para el repartidor en la Fase 4 (S4), incluyendo l
 ---
 
 ## Checklist Final
-- [ ] Todos los handoffs en la tabla tienen el estado "Por crear".
-- [ ] Se ha notificado a los equipos correspondientes para que creen los issues en sus respectivos repositorios.
-- [ ] Este documento ha sido revisado y aprobado.
+- [x] Todos los handoffs en la tabla tienen issue creado y enlazado.
+- [x] Se ha notificado a los equipos correspondientes para que creen los issues en sus respectivos repositorios.
+- [x] Este documento ha sido revisado y aprobado.
