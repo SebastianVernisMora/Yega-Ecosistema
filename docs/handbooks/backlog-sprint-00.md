@@ -1,7 +1,7 @@
 # Backlog Sprint 0: Arranque del Ecosistema Yega
 
 ## Definition of Ready (DoR)
-- [x] Plan diario (`diario-2025-08-14.md`) definido y aprobado.
+- [x] Plan diario (`diario-2025-08-17.md`) definido y aprobado.
 - [x] Handoffs de alto nivel identificados para cada repositorio.
 
 ## Objetivos del Sprint
@@ -44,12 +44,12 @@
 | REP-S4-2  | Documentar Base de PWA (Manifiesto y Offline)  | S4   | P1 - Alto     |
 
 ## Definition of Done (DoD)
-- [ ] Todos los handoffs correspondientes a las tareas P0 han sido creados y entregados.
+- [x] Todos los handoffs correspondientes a las tareas P0 han sido creados y entregados.
 - [ ] Los equipos de cada repositorio han confirmado la recepción y entendimiento de las tareas.
 
 ## Checklist de Ejecución
-- [ ] Crear handoff para `Yega-API`.
-- [ ] Crear handoff para `Yega-Cliente`.
-- [ ] Crear handoff para `Yega-Tienda`.
-- [ ] Crear handoff para `Yega-Repartidor`.
-- [ ] Actualizar `docs/handoffs/index.md`.
+- [x] Crear handoff para `Yega-API`.
+- [x] Crear handoff para `Yega-Cliente`.
+- [x] Crear handoff para `Yega-Tienda`.
+- [x] Crear handoff para `Yega-Repartidor`.
+- [x] Actualizar `docs/handoffs/index.md`.

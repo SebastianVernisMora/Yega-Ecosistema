@@ -1,4 +1,4 @@
-# Handoffs Index - 2025-08-14
+# Handoffs Index - 2025-08-17
 
 Este documento centraliza los handoffs generados hoy. Contiene una tabla resumen y el texto completo de cada issue para ser copiado en su repositorio correspondiente.
 
@@ -6,10 +6,10 @@ Este documento centraliza los handoffs generados hoy. Contiene una tabla resumen
 
 | Repo Destino      | Título del Issue                                | Objetivo                                         | Estado    | Due Date   |
 |-------------------|-------------------------------------------------|--------------------------------------------------|-----------|------------|
-| `Yega-API`        | Plan S1: Consolidar CORS y Docs de Despliegue   | Documentar y estandarizar DevOps (PM2, CORS).    | Por crear | 2025-08-15 |
-| `Yega-Cliente`    | Plan S2: Flujo de Catálogo a Pedido              | Documentar el plan de la aplicación cliente (rutas, UX, sesión). | Por crear | 2025-08-15 |
-| `Yega-Tienda`     | Plan S3: Tablero de Pedidos y Transiciones      | Documentar el tablero de la tienda (estados, RBAC). | Por crear | 2025-08-15 |
-| `Yega-Repartidor` | Plan S4: Flujos de Entrega y Base PWA           | Documentar los flujos del repartidor y la base PWA. | Por crear | 2025-08-15 |
+| `Yega-API`        | Plan S1: Consolidar CORS y Docs de Despliegue   | Documentar y estandarizar DevOps (PM2, CORS).    | Por crear | 2025-08-20 |
+| `Yega-Cliente`    | Plan S2: Flujo de Catálogo a Pedido              | Documentar el plan de la aplicación cliente (rutas, UX, sesión). | Por crear | 2025-08-20 |
+| `Yega-Tienda`     | Plan S3: Tablero de Pedidos y Transiciones      | Documentar el tablero de la tienda (estados, RBAC). | Por crear | 2025-08-20 |
+| `Yega-Repartidor` | Plan S4: Flujos de Entrega y Base PWA           | Documentar los flujos del repartidor y la base PWA. | Por crear | 2025-08-20 |
 
 ---
 
