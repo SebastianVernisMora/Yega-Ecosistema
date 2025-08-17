@@ -11,6 +11,8 @@ Este documento centraliza los handoffs generados hoy. Contiene una tabla resumen
 | `Yega-Tienda`     | [Plan S3: Tablero de Pedidos y Transiciones](https://github.com/SebastianVernisMora/Yega-Tienda/issues/2)   | Documentar el tablero de la tienda (estados, RBAC). | Creado  | 2025-08-15 |
 | `Yega-Repartidor` | [Plan S4: Flujos de Entrega y Base PWA](https://github.com/SebastianVernisMora/Yega-Repartidor/issues/2)    | Documentar los flujos del repartidor y la base PWA. | Creado  | 2025-08-15 |
 
+> Nota de automatización: Al crear nuevos issues de handoff, agrega la etiqueta `sprint-1` y vincula los PRs con palabras de cierre (por ejemplo, “Closes #123”). Esto activará el workflow de Projects v2 para mover el `Status` automáticamente (Todo → In Progress → Done). Consulta la guía en `docs/PROJECTS-AUTOMATION.md`.
+
 ---
 
 ## Handoffs Listos para Copiar
