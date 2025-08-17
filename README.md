@@ -54,21 +54,19 @@ Los puntos clave son:
 Para configurar el entorno de desarrollo, sigue estos pasos. El proceso implica clonar este repositorio central y luego inicializar los submódulos de Git que contienen los componentes individuales (API, apps de frontend).
 
 ```sh
-# 1. Clona el repositorio principal (Yega-Ecosistema)
-git clone <URL_DEL_REPO_YEGA_ECOSISTEMA>
+# 1. Clona el repositorio principal (Yega-Ecosistema) con todos sus submódulos
+git clone --recurse-submodules <URL_DEL_REPO_YEGA_ECOSISTEMA>
 cd Yega-Ecosistema
 
-# 2. Inicializa, descarga y actualiza los submódulos
-# Este comando descarga el código de Yega-API, Yega-Cliente, etc.
-git submodule init
-git submodule update --recursive
+# 2. Si olvidaste clonar con submódulos, inicialízalos y descárgalos manualmente
+git submodule update --init --recursive
 ```
 
 Una vez clonado el repositorio y los submódulos, consulta la [guía de contribución](./docs/agents/AGENTS.md) para entender el flujo de trabajo y cómo ejecutar cada componente.
 
 ## Licencia
 
-Este proyecto se distribuye bajo la licencia [PENDIENTE]. Por favor, actualiza esta sección con la licencia correspondiente.
+Este proyecto se distribuye bajo la licencia [MIT](./LICENSE).
 
 ## Detalles de los Componentes
 
