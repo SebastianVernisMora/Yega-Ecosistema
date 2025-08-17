@@ -1,16 +1,23 @@
+## Resumen
+
+Breve descripción del cambio.
+
+## Issue vinculada
+
+Closes #<número-de-issue>
+
+## Cambios
+-
+
+## Alcance / Riesgos
+-
+
 ## Checklist
-- [ ] Un solo objetivo/tema.
-- [ ] Diff autocontenido y sin cross-repo.
-- [ ] Riesgos y plan de rollback descritos.
-- [ ] Cumple convenciones de estilo.
-- [ ] Handoffs listos si aplica.
-- [ ] AI-Usage: gemini=?, codex=?, jules=?, blackbox=?.
+- [ ] PR listo para revisión
+- [ ] Pruebas/Smoke básicos
+- [ ] Documentación actualizada si aplica
 
-## Descripción
-...
+---
 
-## Riesgos y Rollback
-...
+Automatización: al incluir "Closes #<n>" este PR actualizará el `Status` del Issue en el Project v2 correspondiente.
 
-## Notas
-...
