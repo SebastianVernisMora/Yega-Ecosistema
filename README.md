@@ -2,36 +2,26 @@
 
 ## Descripción General
 
-Este repositorio, `Yega-Ecosistema`, es el monorepo que orquesta el desarrollo de la plataforma Yega. La plataforma se compone de una API central y tres aplicaciones de frontend distintas, cada una orientada a un rol de usuario específico: clientes, repartidores y tiendas.
+Este repositorio, `Yega-Ecosistema`, es el monorepo que orquesta la documentación, planificación y artefactos de desarrollo para la plataforma Yega. La plataforma se compone de una API central y tres aplicaciones de frontend distintas, cada una orientada a un rol de usuario específico: clientes, repartidores y tiendas.
 
-## Estado del Proyecto
+## Estado del Proyecto: Implementación por Fases
 
-**Fase Actual: `S1 API/Infra`**
+El proyecto ha completado con éxito el **Sprint 0**, que consistió en la planificación fundacional y la definición de la arquitectura inicial. Actualmente, nos encontramos en la fase de **implementación por fases (S1-S4)**, donde cada componente del ecosistema tiene un plan de trabajo definido y documentado.
 
-El proyecto se encuentra en la fase de **definición del contrato de la API y la documentación de infraestructura**. El trabajo en esta fase se centra en:
+El estado actual de cada componente es el siguiente:
 
-- Consolidar la especificación de `openapi.yaml`.
-- Definir los modelos de error (`ERRORS.md`).
-- Documentar la configuración de CORS y los playbooks de despliegue.
+| Componente      | Fase Actual | Objetivo Principal                                  | Plan Detallado (Handoff)                                                                               |
+| :-------------- | :---------- | :-------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **Yega-API**    | `S1`        | Consolidar configuración de CORS y docs de despliegue | [Plan S1: Yega-API](https://github.com/SebastianVernisMora/Yega-API/issues/2)        |
+| **Yega-Cliente**  | `S2`        | Definir el flujo de catálogo a pedido               | [Plan S2: Yega-Cliente](https://github.com/SebastianVernisMora/Yega-Cliente/issues/2)    |
+| **Yega-Tienda**   | `S3`        | Diseñar el tablero de gestión de pedidos            | [Plan S3: Yega-Tienda](https://github.com/SebastianVernisMora/Yega-Tienda/issues/2)      |
+| **Yega-Repartidor**| `S4`        | Documentar los flujos de entrega y la base PWA      | [Plan S4: Yega-Repartidor](https://github.com/SebastianVernisMora/Yega-Repartidor/issues/2) |
 
-Para más detalles sobre las fases del proyecto, consulta el documento de [orquestación y fases](./docs/agents/AGENTS.md).
+Para un seguimiento detallado del progreso, consulta el [índice de handoffs](./docs/handoffs/index.md).
 
-## Dinámica de Agentes y Flujo de Trabajo
+## Estructura del Ecosistema
 
-El desarrollo en `Yega-Ecosistema` sigue un flujo de trabajo orquestado por agentes de IA para garantizar la calidad y coherencia del código. La dinámica se define en el documento de [Orquestación de Agentes](./docs/agents/AGENTS.md).
-
-El flujo general es el siguiente:
-
-1.  **Gemini CLI**: Se encarga de los cambios grandes y el desarrollo inicial en el repositorio.
-2.  **Codex CLI**: Revisa el código generado por Gemini para aplicar mejoras de estilo y corregir errores.
-3.  **Jules**: Realiza la revisión final, prepara el Pull Request, documenta los cambios y gestiona los handoffs a otros repositorios.
-4.  **Blackbox**: Interviene para implementaciones puntuales que requieren un alto nivel de complejidad técnica.
-
-Para una descripción detallada de las responsabilidades de cada agente, consulta la [tabla de responsabilidades](./docs/agents/AGENTS.md#3-tabla-de-responsabilidades).
-
-## Componentes
-
-El ecosistema está compuesto por los siguientes sub-repositorios (submódulos de Git):
+El ecosistema está compuesto por varios sub-repositorios (submódulos de Git) que contienen el código fuente de cada aplicación. La estructura completa del monorepo y el propósito de cada componente están detallados en el documento **[Mapeo del Ecosistema](./ECOSISTEMA.md)**.
 
 | Componente | Repositorio | Descripción |
 | :--- | :--- | :--- |
@@ -40,63 +30,30 @@ El ecosistema está compuesto por los siguientes sub-repositorios (submódulos d
 | **Tienda App** | [Yega-Tienda](./Yega-Tienda/) | La aplicación web para que las tiendas gestionen su inventario y pedidos. |
 | **Repartidor App** | [Yega-Repartidor](./Yega-Repartidor/) | La aplicación web para que los repartidores gestionen las entregas. |
 
-## Cómo Contribuir
+## Flujo de Trabajo y Contribuciones
 
-Este monorepo tiene un flujo de trabajo de orquestación específico. Antes de contribuir, por favor revisa la [guía completa para agentes y contribuidores](./docs/agents/AGENTS.md).
+El desarrollo en `Yega-Ecosistema` sigue un flujo de trabajo orquestado por agentes de IA para garantizar la calidad y coherencia. Antes de contribuir, es fundamental revisar la **[guía de orquestación de agentes](./docs/agents/AGENTS.md)**.
 
-Los puntos clave son:
-- **Repositorio de Orquestación**: Este repositorio (`Yega-Ecosistema`) se usa para gestionar la documentación, la planificación y los artefactos de coordinación (`handoffs`). **No se escribe código de aplicación aquí.**
-- **Flujo de PRs**: Todo el trabajo se realiza en ramas (`feat/<nombre>`, `docs/<nombre>`) y se integra a `dev` a través de Pull Requests. `main` es una rama protegida.
-- **Handoffs Cross-Repo**: Cualquier cambio que deba ser implementado en los sub-repositorios (`Yega-API`, `Yega-Cliente`, etc.) se documenta aquí primero y luego se transfiere como un `issue` o `PR` en el repositorio correspondiente.
+Puntos clave:
+- **Repositorio de Orquestación**: Este repositorio se usa para gestionar la documentación y la planificación. **No se escribe código de aplicación directamente aquí.**
+- **Handoffs Cross-Repo**: Los cambios que deben implementarse en los sub-repositorios se documentan primero aquí y se transfieren como un `issue` de "handoff".
+- **Flujo de PRs**: Todo el trabajo se realiza en ramas y se integra a `dev` a través de Pull Requests. `main` es una rama protegida.
 
 ## Cómo Empezar
 
-Para configurar el entorno de desarrollo, sigue estos pasos. El proceso implica clonar este repositorio central y luego inicializar los submódulos de Git que contienen los componentes individuales (API, apps de frontend).
+Para configurar el entorno de desarrollo, clona este repositorio junto con sus submódulos.
 
 ```sh
-# 1. Clona el repositorio principal (Yega-Ecosistema) con todos sus submódulos
+# 1. Clona el repositorio principal con todos sus submódulos
 git clone --recurse-submodules <URL_DEL_REPO_YEGA_ECOSISTEMA>
 cd Yega-Ecosistema
 
-# 2. Si olvidaste clonar con submódulos, inicialízalos y descárgalos manualmente
+# 2. Si ya lo clonaste sin submódulos, inicialízalos manually
 git submodule update --init --recursive
 ```
 
-Una vez clonado el repositorio y los submódulos, consulta la [guía de contribución](./docs/agents/AGENTS.md) para entender el flujo de trabajo y cómo ejecutar cada componente.
+Una vez clonado, consulta el `README.md` de cada sub-repositorio para instrucciones específicas de ejecución.
 
 ## Licencia
 
 Este proyecto se distribuye bajo la licencia [MIT](./LICENSE).
-
-## Detalles de los Componentes
-
-### Yega-API
-
-- **Propósito**: API central de la plataforma.
-- **Documentación**: La especificación completa de la API se encuentra en el archivo [openapi.yaml](./Yega-API/contracts/openapi.yaml).
-
-### Aplicaciones Frontend
-
-Todas las aplicaciones de frontend comparten una pila de tecnología similar y siguen los mismos pasos básicos para la configuración y ejecución local.
-
-- **Tecnologías Comunes**:
-  - Vite
-  - React
-  - TypeScript
-  - shadcn/ui
-  - Tailwind CSS
-
-- **Pasos para Ejecutar (ejemplo con `Yega-Cliente`)**:
-
-  ```sh
-  # 1. Navega al directorio del componente
-  cd Yega-Cliente
-
-  # 2. Instala las dependencias
-  npm install
-
-  # 3. Inicia el servidor de desarrollo
-  npm run dev
-  ```
-
-  Repite estos pasos para `Yega-Tienda` y `Yega-Repartidor` según sea necesario. Para más detalles sobre cada aplicación, consulta el `README.md` dentro de su respectivo directorio.
