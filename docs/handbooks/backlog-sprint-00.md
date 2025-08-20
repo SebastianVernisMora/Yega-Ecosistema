@@ -46,6 +46,7 @@
 ## Definition of Done (DoD)
 - [x] Todos los handoffs correspondientes a las tareas P0 han sido creados y entregados.
 - [ ] Los equipos de cada repositorio han confirmado la recepción y entendimiento de las tareas.
+- [x] Checklist de pendientes creado en `docs/plan/checklist-fase-actual.md`
 
 ## Checklist de Ejecución
 - [x] Crear handoff para `Yega-API`.
@@ -53,3 +54,4 @@
 - [x] Crear handoff para `Yega-Tienda`.
 - [x] Crear handoff para `Yega-Repartidor`.
 - [x] Actualizar `docs/handoffs/index.md`.
+- [x] Crear checklist de pendientes para la fase actual

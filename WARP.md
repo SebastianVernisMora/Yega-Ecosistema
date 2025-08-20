@@ -85,19 +85,19 @@ cd Yega-API && cat contracts/openapi.yaml
 
 ## AI Agent Orchestration Workflow
 
-This project follows a specific AI agent workflow that must be understood when making contributions:
+This repository follows the updated workflow and roles:
 
-### Agent Hierarchy
-1. **Gemini CLI**: Large changes and initial development
-2. **Codex CLI**: Code review and style improvements
-3. **Jules**: Final review, PR preparation, and cross-repo handoffs
-4. **Blackbox**: Complex technical implementations
+### Agent Hierarchy (Updated)
+1. **Jules**: Large code changes and initial implementation
+2. **Gemini CLI**: QA pass, polish, and fixes
+3. **Codex CLI**: Final filter and PR creation
+4. **Blackbox/Qwen/Warp (optional)**: Only when blocked (deep analysis, complex fixes, extra filters)
 
 ### Key Rules
 - **One PR per topic/feature**
-- **No cross-repo direct changes** - use handoffs documented in text
-- **AI Usage footer required** in all commits: `AI-Usage: gemini=0, codex=0, jules=0, blackbox=0`
-- All work done in feature branches (`feat/<name>`, `docs/<name>`) merged to `dev` via PR
+- **No cross-repo direct changes** — document handoffs instead
+- **AI Usage footer required** in commits: `AI-Usage: jules=1, gemini=1, codex=1`
+- Work in feature branches (`feat/<name>`, `docs/<name>`) targeting `dev`
 - `main` branch is protected
 
 ## Development Workflow
