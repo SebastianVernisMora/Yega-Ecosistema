@@ -30,6 +30,10 @@ El ecosistema está compuesto por varios sub-repositorios (submódulos de Git) q
 | **Tienda App** | [Yega-Tienda](./Yega-Tienda/) | La aplicación web para que las tiendas gestionen su inventario y pedidos. |
 | **Repartidor App** | [Yega-Repartidor](./Yega-Repartidor/) | La aplicación web para que los repartidores gestionen las entregas. |
 
+### Submódulos y ramas activas
+
+Consulta el estado actual (rama y último commit) de cada submódulo en `docs/submodules/STATUS.md`. Ahí también se detallan convenciones para sincronizar ramas y actualizar referencias del superproyecto.
+
 ## Flujo de Trabajo y Contribuciones
 
 El desarrollo en `Yega-Ecosistema` sigue un flujo de trabajo orquestado por agentes de IA para garantizar la calidad y coherencia. Antes de contribuir, es fundamental revisar la **[guía de orquestación de agentes](./docs/agents/AGENTS.md)**.
@@ -38,6 +42,13 @@ Puntos clave:
 - **Repositorio de Orquestación**: Este repositorio se usa para gestionar la documentación y la planificación. **No se escribe código de aplicación directamente aquí.**
 - **Handoffs Cross-Repo**: Los cambios que deben implementarse en los sub-repositorios se documentan primero aquí y se transfieren como un `issue` de "handoff".
 - **Flujo de PRs**: Todo el trabajo se realiza en ramas y se integra a `dev` a través de Pull Requests. `main` es una rama protegida.
+
+### Convenciones de ramas y submódulos
+
+- `main`: línea base estable del monorepo.
+- `dev`: rama de integración activa para documentación/planeación.
+- Submódulos deben trabajar en `dev` o `feat/*` propios y el superproyecto fija el commit requerido por sprint.
+- Para actualizar referencias: `git submodule update --remote --merge` o fijar manualmente la revisión y commitear en el superproyecto.
 
 ## Cómo Empezar
 

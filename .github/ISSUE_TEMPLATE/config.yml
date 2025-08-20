@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guía de automatización (Projects v2)
+    url: https://github.com/SebastianVernisMora/Yega-Ecosistema/blob/main/docs/PROJECTS-AUTOMATION.md
+    about: Cómo se mueven automáticamente los issues entre estados.
+  - name: Handoffs del ecosistema
+    url: https://github.com/SebastianVernisMora/Yega-Ecosistema/blob/main/docs/handoffs/index.md
+    about: Índice de handoffs y enlaces a issues cross-repo.
+  - name: Mapa del Ecosistema
+    url: https://github.com/SebastianVernisMora/Yega-Ecosistema/blob/main/ECOSISTEMA.md
+    about: Descripción general y estructura del monorepo.
+
