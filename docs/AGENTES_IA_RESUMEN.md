@@ -1,6 +1,7 @@
-# Agentes IA — Guía consolidada por repo/agente/tarea
+# Agentes IA — Guía Consolidada por Repo/Agente/Tarea (sin Blackbox / sin Warp)
 
-Este resumen valida y unifica los MDs de agentes existentes (Gemini, Codex, Jules) en el ecosistema Yega. Aplica la política: sin cambios cross-repo directos, un PR por tema, y footer en commits: `AI-Usage: jules=<0|1>, gemini=<0|1>, codex=<0|1>, blackbox=0`.
+Este resumen valida y unifica los MDs de agentes existentes (Gemini, Codex, Jules) en el ecosistema Yega. Aplica la política: sin cambios cross‑repo directos, un PR por tema, y footer en commits: `AI-Usage: gemini=0, codex=0, jules=0, blackbox=0`.
+
 ## Ecosistema (raíz)
 - Gemini: no implementa código aquí; solo creación/edición de documentación y plan de trabajo.
 - Codex: mantiene docs orquestadoras (p. ej., `AGENTS.md`, planes en `docs/`).
@@ -45,6 +46,8 @@ Este resumen valida y unifica los MDs de agentes existentes (Gemini, Codex, Jule
 - Herramientas adicionales (solo bloqueo): Blackbox, Qwen Coder o Warp para análisis profundo o filtros extra.
 
 ## Matriz rápida (repo → agente → foco)
+  
+  
 - API → Jules: contrato/endpoints; Gemini: calidad/QA; Codex: PRs.
 - Cliente → Jules: auth/flujos base; Gemini: pulido; Codex: PRs.
 - Tienda → Jules: dashboard/detalle; Gemini: consistencia; Codex: PRs.

@@ -2,7 +2,7 @@
 
 Este documento centraliza el flujo de trabajo y uso de las IAs en el proyecto **Yega-Ecosistema**.
 
-## 3. Tabla de Responsabilidades
+## 1. Tabla de Responsabilidades
 
 | Fase          | Objetivo                                      | Entrada                             | Salida                                   | Responsable |
 |---------------|-----------------------------------------------|--------------------------------------|-------------------------------------------|-------------|
@@ -10,6 +10,7 @@ Este documento centraliza el flujo de trabajo y uso de las IAs en el proyecto **
 | QA/CLI        | Validar cambios y aplicar ajustes menores      | Diff de Desarrollo                   | Patch limpio                              | Gemini      |
 | Revisión PR   | Último filtro y creación del PR (plantilla, checklist) | Código final                   | Pull Request listo                        | Codex       |
 | Implementación| Resolver problemas complejos                   | Especificación técnica               | Código especializado                      | Blackbox    |
+
 
 ## 2. Reglas
 - **Una PR por tema.**
