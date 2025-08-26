@@ -4,20 +4,20 @@
 
 Este repositorio, `Yega-Ecosistema`, es el monorepo que orquesta la documentación, planificación y artefactos de desarrollo para la plataforma Yega. La plataforma se compone de una API central y tres aplicaciones de frontend distintas, cada una orientada a un rol de usuario específico: clientes, repartidores y tiendas.
 
-## Estado del Proyecto: Implementación por Fases
+## Estado del Proyecto: Sprint 2 - Integración y Funcionalidades Avanzadas
 
-El proyecto ha completado con éxito el **Sprint 0**, que consistió en la planificación fundacional y la definición de la arquitectura inicial. Actualmente, nos encontramos en la fase de **implementación por fases (S1-S4)**, donde cada componente del ecosistema tiene un plan de trabajo definido y documentado.
+El proyecto ha concluido la fase de planificación y setup inicial (Sprint 1) y ahora se encuentra en el **Sprint 2**. El objetivo de este sprint es conectar los componentes del ecosistema, reemplazar los mocks por la API real, e implementar funcionalidades críticas como pagos, notificaciones y geolocalización.
 
 El estado actual de cada componente es el siguiente:
 
-| Componente      | Fase Actual | Objetivo Principal                                  | Plan Detallado (Handoff)                                                                               |
-| :-------------- | :---------- | :-------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| **Yega-API**    | `S1`        | Consolidar configuración de CORS y docs de despliegue | [Plan S1: Yega-API](https://github.com/SebastianVernisMora/Yega-API/issues/2)        |
-| **Yega-Cliente**  | `S2`        | Definir el flujo de catálogo a pedido               | [Plan S2: Yega-Cliente](https://github.com/SebastianVernisMora/Yega-Cliente/issues/2)    |
-| **Yega-Tienda**   | `S3`        | Diseñar el tablero de gestión de pedidos            | [Plan S3: Yega-Tienda](https://github.com/SebastianVernisMora/Yega-Tienda/issues/2)      |
-| **Yega-Repartidor**| `S4`        | Documentar los flujos de entrega y la base PWA      | [Plan S4: Yega-Repartidor](https://github.com/SebastianVernisMora/Yega-Repartidor/issues/2) |
+| Componente      | Objetivo Principal del Sprint 2                                       | Plan Detallado                                      |
+| :-------------- | :-------------------------------------------------------------------- | :-------------------------------------------------- |
+| **Yega-API**    | Implementar endpoints reales, autenticación, y sistemas de pago y notificaciones. | [Plan de Trabajo - Sprint 2](./PLAN_TRABAJO_SPRINT_2.md) |
+| **Yega-Cliente**  | Integrar con la API real, implementar flujo de pagos y notificaciones.       | [Plan de Trabajo - Sprint 2](./PLAN_TRABAJO_SPRINT_2.md) |
+| **Yega-Tienda**   | Conectar a la API, implementar gestión de inventario y analytics.   | [Plan de Trabajo - Sprint 2](./PLAN_TRABAJO_SPRINT_2.md) |
+| **Yega-Repartidor**| Integrar con la API, implementar geolocalización avanzada y PWA offline. | [Plan de Trabajo - Sprint 2](./PLAN_TRABAJO_SPRINT_2.md) |
 
-Para un seguimiento detallado del progreso, consulta el [índice de handoffs](./docs/handoffs/index.md).
+Para un seguimiento detallado del progreso, consulta el [checklist de la fase actual](./docs/plan/checklist-fase-actual.md).
 
 ## Estructura del Ecosistema
 
