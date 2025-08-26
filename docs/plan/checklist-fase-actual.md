@@ -1,78 +1,49 @@
-# Checklist de Pendientes - Fase Actual (Sprint 1)
+# Checklist de Pendientes - Fase Actual (Sprint 2)
 
 ## Objetivo General
-Completar la implementacion de las funcionalidades definidas para el Sprint 1 en todos los modulos del ecosistema Yega.
+Evolucionar el ecosistema Yega desde una base funcional hacia una plataforma integrada con funcionalidades avanzadas, preparándola para pruebas con usuarios reales y eventual lanzamiento.
 
 ## Yega-API
-
-### Documentacion
-- [x] PM2-PLAYBOOK.md (creado)
-- [x] GO-LIVE.md (creado)
-- [x] OBSERVABILIDAD.md (creado)
-- [x] CORS-ORIGINS.md (existente)
-- [ ] Borrador de PR para documentacion
-- [x] Issue de handoff para Ops (Issue #4)
-
-### Implementacion
-- [ ] Refinar contrato OpenAPI (`openapi.yaml`)
-- [ ] Expandir servidor mock
-- [ ] Endpoint: Crear Pedido (`POST /pedidos`)
-- [ ] Endpoint: Cambiar Estado de Pedido (`PATCH /pedidos/:id`)
+- [ ] **Implementación de Endpoints Reales**: Migrar de mocks a implementación real con base de datos.
+- [ ] **Autenticación JWT**: Implementar autenticación JWT completa.
+- [ ] **Gestión de Entidades**: Crear endpoints de gestión de usuarios, productos, y pedidos.
+- [ ] **Sistema de Notificaciones**: Implementar WebSockets para notificaciones en tiempo real.
+- [ ] **Integración de Pagos**: Integrar un gateway de pagos (ej. Stripe).
+- [ ] **Geolocalización**: Integrar APIs de mapas para cálculo de rutas y tracking.
 
 ## Yega-Cliente
-
-### Documentacion
-- [x] cliente-plan.md (creado)
-- [x] cliente-mapeo.md (creado)
-- [x] cliente-sesion.md (creado)
-- [x] cliente-rendimiento.md (creado)
-- [ ] Borrador de PR para documentacion
-
-### Implementacion
-- [ ] Implementar Login (`LoginScreen`)
-- [ ] Implementar Registro (`RegisterScreen`)
-- [ ] Dashboard con Tiendas (`DashboardScreen`)
-- [ ] Detalle de Tienda (`StoreDetailScreen`)
-- [ ] Carrito y Checkout (`CartScreen`)
-- [ ] Confirmacion de Pedido (`OrderSuccessScreen`)
+- [ ] **Integración con API Real**: Eliminar mocks y conectar con Yega-API.
+- [ ] **Manejo de Errores**: Implementar manejo de errores robusto desde la API.
+- [ ] **Sistema de Pagos**: Integrar formularios de pago seguros y flujo de checkout.
+- [ ] **Notificaciones y Tracking**: Implementar notificaciones push y tracking en tiempo real.
+- [ ] **Optimización de Performance**: Aplicar lazy loading, optimización de imágenes y service workers.
 
 ## Yega-Tienda
-
-### Documentacion
-- [x] tienda-plan.md (creado)
-- [x] tienda-mapeo.md (creado)
-- [ ] Borrador de PR para documentacion
-
-### Implementacion
-- [ ] Dashboard de Pedidos (`DashboardTienda`)
-- [ ] Drag & Drop en Tablero Kanban
-- [ ] Detalle de Pedido (`PedidoDetalle`)
+- [ ] **Integración con API Real**: Conectar con endpoints de productos y pedidos.
+- [ ] **Gestión de Inventario**: Implementar CRUD completo de productos y gestión de stock.
+- [ ] **Analytics y Reportes**: Crear dashboard de métricas de ventas y reportes.
+- [ ] **Notificaciones**: Implementar alertas de nuevos pedidos y cambios de estado.
 
 ## Yega-Repartidor
-
-### Documentacion
-- [x] repartidor-plan.md (creado)
-- [x] pwa-base.md (creado)
-- [ ] Borrador de PR para documentacion
-
-### Implementacion
-- [ ] Dashboard de Pedidos Disponibles (`PedidosDashboard`)
-- [ ] Flujo de Entrega (`RutaEntregaScreen`)
-- [ ] Configurar PWA basica (`manifest.json`, `service-worker.js`)
+- [ ] **Integración con API Real**: Conectar con endpoints de pedidos y rutas.
+- [ ] **Geolocalización Avanzada**: Integrar con GPS, mapas y navegación.
+- [ ] **Funcionalidades PWA Avanzadas**: Implementar capacidades offline y sincronización en background.
+- [ ] **Dashboard de Repartidor**: Crear dashboard con métricas de performance e historial.
 
 ## Estado General
 
-| Modulo          | Documentacion Completada | Implementacion Iniciada | Implementacion Completada |
-|----------------|--------------------------|--------------------------|----------------------------|
-| Yega-API       | [x] 4/4                   | [ ] 0/4                   | [ ] 0/4                     |
-| Yega-Cliente   | [x] 4/4                   | [ ] 0/6                   | [ ] 0/6                     |
-| Yega-Tienda    | [x] 2/2                   | [ ] 0/3                   | [ ] 0/3                     |
-| Yega-Repartidor| [x] 2/2                   | [ ] 0/3                   | [ ] 0/3                     |
+| Modulo          | Integración Completada | Funcionalidades Avanzadas | Optimización |
+|-----------------|-------------------------|---------------------------|--------------|
+| Yega-API        | [ ] 0/3                 | [ ] 0/3                   | [ ] 0/1      |
+| Yega-Cliente    | [ ] 0/2                 | [ ] 0/2                   | [ ] 0/1      |
+| Yega-Tienda     | [ ] 0/2                 | [ ] 0/2                   | [ ] 0/0      |
+| Yega-Repartidor | [ ] 0/1                 | [ ] 0/2                   | [ ] 0/1      |
 
 ## Proximos Pasos
-
-1. Iniciar implementacion de funcionalidades en todos los modulos
-2. Crear PRs de documentacion en cada repositorio
-3. Coordinar el trabajo entre equipos para mantener sincronizacion
-4. Actualizar tableros de seguimiento (BOARD-Sprint-1.md) a medida que se avanza
-5. Preparar para la revision del Sprint 1 al finalizar las implementaciones
+1. Implementar endpoints reales en Yega-API.
+2. Conectar los frontends a la API real, eliminando mocks.
+3. Desarrollar funcionalidades de pago y notificaciones.
+4. Implementar geolocalización y optimización de rutas.
+5. Realizar pruebas de integración continuas entre todos los módulos.
+6. Actualizar la documentación de la API a medida que se implementan los endpoints.
+7. Preparar el entorno para el despliegue y las pruebas de aceptación del usuario (UAT).

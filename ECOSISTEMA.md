@@ -117,9 +117,9 @@ Yega-Tienda/
 Este ecosistema usa GitHub Projects v2 a nivel de usuario para gestionar los tableros de sprint de cada repo. La automatización mueve el campo `Status` de los issues cuando se abren/mergean PRs o se cierran/reabren issues.
 
 - Guía: [docs/PROJECTS-AUTOMATION.md](./docs/PROJECTS-AUTOMATION.md)
-- Tableros (usuario): “Sprint 1 - Yega-API”, “Sprint 1 - Yega-Cliente”, “Sprint 1 - Yega-Tienda”, “Sprint 1 - Yega-Repartidor”.
-- Backlog por repo: `docs/ISSUES-Sprint-1.md` en cada repositorio.
-- Etiqueta del sprint: `sprint-1`.
+- Tableros (usuario): “Sprint 2 - Yega-API”, “Sprint 2 - Yega-Cliente”, “Sprint 2 - Yega-Tienda”, “Sprint 2 - Yega-Repartidor”.
+- Backlog por repo: `docs/ISSUES-Sprint-2.md` en cada repositorio.
+- Etiqueta del sprint: `sprint-2`.
 
 Para listar projects por CLI:
 
