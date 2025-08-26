@@ -46,7 +46,9 @@ Este resumen valida y unifica los MDs de agentes existentes (Gemini, Codex, Jule
 - Herramientas adicionales (solo bloqueo): Blackbox, Qwen Coder o Warp para análisis profundo o filtros extra.
 
 ## Matriz rápida (repo → agente → foco)
-- API → Gemini: contrato/endpoints; Codex: calidad; Jules: PRs.
-- Cliente → Gemini: auth/flujos base; Codex: pulido; Jules: PRs.
-- Tienda → Gemini: dashboard/detalle; Codex: consistencia; Jules: PRs.
-- Repartidor → Gemini: flujo entrega; Codex: robustez; Jules: PRs.
+  
+  
+- API → Jules: contrato/endpoints; Gemini: calidad/QA; Codex: PRs.
+- Cliente → Jules: auth/flujos base; Gemini: pulido; Codex: PRs.
+- Tienda → Jules: dashboard/detalle; Gemini: consistencia; Codex: PRs.
+- Repartidor → Jules: flujo de entrega; Gemini: robustez/pulido; Codex: PRs.

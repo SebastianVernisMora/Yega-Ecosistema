@@ -2,11 +2,15 @@
 
 Este documento centraliza el flujo de trabajo y uso de las IAs en el proyecto **Yega-Ecosistema**.
 
-## 1. Flujo General (Actualizado)
-1. **Jules** — Cambios grandes e implementación inicial en el repo abierto.
-2. **Gemini CLI** — QA/pulido: pruebas rápidas, correcciones y mejoras menores.
-3. **Codex CLI** — Último filtro y creación del PR (plantilla y checklist).
-4. **Blackbox/Qwen/Warp (opcional)** — Solo si hay bloqueo: análisis profundo o filtros adicionales.
+## 1. Tabla de Responsabilidades
+
+| Fase          | Objetivo                                      | Entrada                             | Salida                                   | Responsable |
+|---------------|-----------------------------------------------|--------------------------------------|-------------------------------------------|-------------|
+| Desarrollo    | Implementar cambios grandes                   | Issues / Docs                        | Código                                    | Jules       |
+| QA/CLI        | Validar cambios y aplicar ajustes menores      | Diff de Desarrollo                   | Patch limpio                              | Gemini      |
+| Revisión PR   | Último filtro y creación del PR (plantilla, checklist) | Código final                   | Pull Request listo                        | Codex       |
+| Implementación| Resolver problemas complejos                   | Especificación técnica               | Código especializado                      | Blackbox    |
+
 
 ## 2. Reglas
 - **Una PR por tema.**
