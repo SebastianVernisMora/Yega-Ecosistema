@@ -2,6 +2,7 @@
 
 Este documento centraliza el flujo de trabajo y uso de las IAs en el proyecto **Yega-Ecosistema**.
 
+
 ## 1. Tabla de Responsabilidades
 
 | Fase          | Objetivo                                      | Entrada                             | Salida                                   | Responsable |

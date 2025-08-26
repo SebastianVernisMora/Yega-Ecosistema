@@ -43,12 +43,9 @@ Este resumen valida y unifica los MDs de agentes existentes (Gemini, Codex, Jule
 - No cross‑repo: si un cambio afecta otro repo, documentar dependencia en comentarios del issue y en el PR.
 - Branches: `feat/<feature>` o `docs/<tema>` contra `dev`.
 - PRs: usar plantilla `.github/pull_request_template.md` y “Closes <repo>#<n>”.
-- Herramientas adicionales (solo bloqueo): Blackbox, Qwen Coder o Warp para análisis profundo o filtros extra.
-
-## Matriz rápida (repo → agente → foco)
-  
-  
+- Herramientas adicionales (solo bloqueo): Blackbox, Qwen Coder o Warp para análisis profundo o filtros extra.  
 - API → Jules: contrato/endpoints; Gemini: calidad/QA; Codex: PRs.
 - Cliente → Jules: auth/flujos base; Gemini: pulido; Codex: PRs.
 - Tienda → Jules: dashboard/detalle; Gemini: consistencia; Codex: PRs.
 - Repartidor → Jules: flujo de entrega; Gemini: robustez/pulido; Codex: PRs.
+
