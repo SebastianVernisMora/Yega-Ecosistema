@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [ dev, main ]
+
+jobs:
+  test-and-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install root deps
+        run: pnpm install --frozen-lockfile=false
+
+      - name: Install submodule deps
+        run: |
+          (cd Yega-API && pnpm install --frozen-lockfile=false)
+          (cd Yega-Cliente && pnpm install --frozen-lockfile=false)
+          (cd Yega-Tienda && pnpm install --frozen-lockfile=false)
+          (cd Yega-Repartidor && pnpm install --frozen-lockfile=false)
+
+      - name: Run checks with coverage
+        run: |
+          chmod +x scripts/check-all.sh
+          ./scripts/check-all.sh --coverage --include-sdk
+
+      - name: Upload coverage artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-bundles
+          path: |
+            Yega-API/coverage/**
+            Yega-Cliente/coverage/**
+            Yega-Tienda/coverage/**
+            Yega-Repartidor/coverage/**
+
