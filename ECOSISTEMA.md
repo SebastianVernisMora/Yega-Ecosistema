@@ -126,3 +126,15 @@ Para listar projects por CLI:
 ```bash
 gh project list --owner SebastianVernisMora
 ```
+
+---
+
+## Entorno de Testing MVP y Automatización
+
+- Folder `Testing-MVP/`: contiene clones listos para demo local del MVP con geolocalización y ciclo de pedidos.
+  - Arranque unificado: `bash Testing-MVP/bootstrap_mvp.sh {start|stop|status}`.
+  - Detalles y endpoints: `Testing-MVP/README.md`.
+
+- Repos de soporte para automatizar pruebas con Codex Web:
+  - `Yega-API-DEV`, `Yega-Cliente-DEV`, `Yega-Tienda-DEV`, `Yega-Repartidor-DEV`.
+  - Cada uno incluye `TEST_CHECKLIST.md` y `scripts/test_mvp.sh` (un solo comando para lint/tests/build y reporte en `docs/`).
